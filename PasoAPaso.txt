@@ -152,7 +152,21 @@ forma no enviar un bug o inconsistencias al repositorio del proyecto)
 
 ** Estrategias de Deployment Profesional **
 
-66. Tener el proyecto en github y tener listo firebase
+66. Tener el proyecto en github y Crear proyecto en firebase (ver archivo: ContectarAppConFirebase.txt)
+
+67. Crear la carpeta: .github
+
+68. Crear la carpeta: .github/workflows
+
+69. Crear el archivo: .github/workflows/deploy-to-firebase.yml
+
+70. Ir al repo de git en la página, luego a settings, ir a secrets:
+    - Crear el secret FIREBASE_TOKEN con el valor obtenido (Archivo ContectarAppConFirebase.txt)
+    - Crear el secret CLIENT_ID_APP con el valor del .ENV 
+    - Crear el secret KEY_GOOGLE_MAPS con el valor del .ENV
+                          
+
+
 
 ** Optimización de aplicaciones web con React **
 
