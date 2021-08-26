@@ -152,6 +152,8 @@ forma no enviar un bug o inconsistencias al repositorio del proyecto)
 
 ** Estrategias de Deployment Profesional **
 
+66. Tener el proyecto en github y tener listo firebase
+
 ** Optimización de aplicaciones web con React **
 
 ** Bonus: trabaja con Strapi CMS para crear tu propia API **

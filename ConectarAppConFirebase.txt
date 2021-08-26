@@ -1,0 +1,23 @@
+-> Una vez logeado, crear nuevo proyecto: pstore-online
+
+-> Ir a la pestaña: complicación/hosting y darle en comenzar.
+
+-> Instalar: npm install -g firebase-tools
+
+-> Acceder a google: firebase login (Cambiar de consola -> cmd)
+
+-> Iniciar proyecto: firebase init (Cambiar de consola -> cmd)
+
+-> Luego de inicial proyecto seleccionar Hosting: Configure files for firebase
+
+-> Seleccionar el proyecto creado: pstore-online
+
+-> Indicar el directorio publico: dist
+
+-> Sobreescribir las rutas: Yes
+
+-> Subir automaticamente a github: No
+
+-> Sobreescribir index: No
+
+-> Enviar cambios al repositorio de github
