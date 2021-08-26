@@ -1,0 +1,64 @@
+Para nuestro proyecto es importante que tengamos acceso a la API de JavaScript de 
+Google Maps, por lo tanto en este recurso seguirás paso a paso para obtener las 
+credenciales necesarias para integrar dicha API a nuestro proyecto.
+
+
+** Cómo obtener la API de JavaScript de Google Maps **
+
+-> Lo primero que debes tener en cuenta es que debemos de utilizar una cuenta de Google 
+   para poder utilizar el uso de estos recursos. También es posible que te pida validar 
+   tu cuenta de facturación para hacer uso de este recurso en tus proyectos.
+
+
+** Crear cuenta en Google Developers **
+
+-> Para poder hacer uso de las API de Google debemos de registrarnos en https://developers.google.com/ 
+   para poder tener acceso a la consola administrativa que nos permitirá registrar los 
+   servicios que vamos a utilizar.
+
+   https://console.cloud.google.com/getting-started?pli=1&organizationId=0
+
+** Crear las llaves para utilizar la API de JavaScript para Google Maps **
+
+-> Las llaves que utilizaremos es un identificador único que nos permite autenticarnos con 
+   los servicios de Google para poderlos utilizar en nuestros proyectos.
+
+   En la consola de Google debemos de crear un nuevo proyecto:
+
+   Project name: pstore-online
+
+-> Una vez creado el proyecto nos movemos a la sección de “APIS & Services” y elegimos la 
+   opción de “Enable APIS and Services”.
+
+-> En esta sección te encontrarás todas las API que Google dispone para habilitar. Utilizaremos 
+   el buscador para encontrar la API “Maps JavaScript API”.
+
+-> Seleccionamos la API y nos llevará a la pantalla donde habilitaremos el servicio, te 
+   invito a leer la documentación, la información proporcionada y lo que implica el uso de 
+   esta API.
+
+-> Seleccionamos “Enable” este proceso puede tardar un poco en lo que se habilitan los servicios 
+   disponibles para el uso de la API.   
+
+-> Ahora podemos ver la sección de métricas del uso de la API.
+
+
+** Habilitar las credenciales para el uso de la API de JavaScript para Google Maps **
+
+-> Una vez habilitada la API podemos ver el menú lateral donde encontraremos la sección 
+   “Credentials”. Seleccionamos “Create credentials” y elegimos la opción de “API Key”.
+
+-> Esta opción nos creará la API Key que utilizaremos dentro de nuestro proyecto en la próxima 
+   clase, guarda de forma segura esta llave y no la compartas.   
+
+   KEY: AIzaSyBTq_lQnK8GDHKn0lQ5wz7Hz24WaNm4CIk
+
+-> Ahora ya tienes la API Key que utilizaremos en nuestro proyecto y cuando agreguemos la 
+   integración vamos a ver el código un poco similar a esta forma:
+   https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap
+
+
+NOTA: Recuerda que el uso de las API de Google pueden generar un costo, te invito a que pases 
+      por la sección de precios y puedas revisar a detalle el alcance que tiene el uso de la 
+      capa que provee la API y en qué momento empieza a generar un costo para tu servicio.
+      https://cloud.google.com/maps-platform/pricing/   

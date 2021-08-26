@@ -1,0 +1,44 @@
+{
+    /*Configuración de Eslint (Herramienta de análisis de código, debemos cumplir con las reglas establecidas)*/
+    //Indicamos de donde extendemos la configuración
+    "extends": [
+      "airbnb",
+      "prettier"
+    ],
+    //Pluggin que usaremos para optimizar el código
+    "plugins": [
+      "prettier"
+    ],
+    //Estableciendo las reglas para que el código maneje un formato
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "react/prop-types": 0,
+      "no-underscore-dangle": 0,
+      "import/imports-first": [
+        "error",
+        "absolute-first"
+      ],
+      "import/newline-after-import": "error",
+      "arrow-body-style": 0
+    },
+    //Formas en las que podemos trabajar con diferentes archivos
+    "globals": {
+      "window": true,
+      "document": true,
+      "localStorage": true,
+      "FormData": true,
+      "FileReader": true,
+      "Blob": true,
+      "navigator": true
+    },
+    //Indentificar lo que hará todo nuestro producto
+    "parser": "babel-eslint"
+  }

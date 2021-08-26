@@ -1,0 +1,157 @@
+  
+** Configuración y Estructura del Proyecto **
+
+1. Iniciar git: git init
+
+2. Configurar información proyecto: npm init -y
+
+3. Instalar react: npm install react react-dom
+
+4. Crear la carpeta: src
+
+5. Crear la carpeta: public
+
+6. Crear el archivo: src/index.js
+
+7. Crear la carpeta: src/components
+
+8. Crear el componente: src/components/App.jsx
+
+9. Crear el archivo: public/index.html
+
+** Configuración de Webpack **
+
+10. Instalar Webpack: npm install webpack webpack-cli webpack-dev-server --save-dev
+
+11. Instalar loader y plugin html: npm install html-webpack-plugin html-loader --save-dev
+
+12. Instalar loader babel: npm install babel-loader  @babel/preset-env @babel/preset-react @babel/core --save-dev
+
+13. Crear el archivo: webpack.config.js
+
+14. Crear el archivo: .babelrc
+
+15. Agregar los comandos necesarios en el package.json para compilar la configuración de webpack
+
+16. Instalar loader y plugin CSS: npm install css-loader mini-css-extract-plugin --save-dev
+
+17. Añadir la configuración necesaria al webpack
+
+18. Crear la carpeta: src/styles 
+
+19. Crear la carpeta: src/styles/components
+
+20. Crear el archivo: src/styles/components/App.css
+
+21. Instalar loader y plugin de preprocesador CSS, Sass: npm install sass sass-loader --save-dev
+
+22. Añadir la configuración necesaria al webpack
+
+** Configuración de ESLint y Prettier **
+
+23. Instalar eslint de forma global: npm install -g eslint
+
+24. Instalar eslint de forma local: npm install eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+
+25. Crear el archivo: .eslintrc
+
+26. Instalar prettier: npm install prettier eslint-plugin-prettier eslint-config-prettier
+
+27. Crear el archivo: .prettierrc
+
+28. Añadir scripts necesarios en package.json para ejecutar los elementos configurados.
+
+** Configuración de Git Hooks con Husky **
+(Husky es una herramienta que nos permite ejecutar Git Hooks de forma más amigable y sencilla con 
+los cuales vamos a garantizar que se corren las pruebas pertinentes en nuestro código y de esta 
+forma no enviar un bug o inconsistencias al repositorio del proyecto)
+
+29. Instalar husky: npm install husky --save-dev
+
+30. Agregar la configuración de husky en el package.json.
+
+** Arquitectura de Componentes de nuestro Proyecto **
+
+31. Crear la carpeta: src/containers
+
+32. Crear la carpeta: src/routes
+
+33. Instalar la dependencia: npm install react-router-dom --save 
+
+34. Crear el archivo: src/routes/App.jsx
+
+35. Crear el componente: src/containers/Home.jsx
+
+36. Crear el componente: src/containers/Checkout.jsx
+
+37. Crear el componente: src/containers/Payment.jsx
+
+38. Crear el componente: src/containers/Success.jsx
+
+39. Crear el componente: src/containers/Information.jsx
+
+40. Crear el componente: src/containers/NotFound.jsx
+
+** Maquetación y Estilos a nuestros componentes **
+
+41. Crear el componente: src/components/Layout.jsx
+
+42. Crear el componente: src/components/Header.jsx
+
+43. Crear el componente: src/components/Footer.jsx
+
+44. Agregar los archivos css de los componentes en: src/styles/components
+
+45. Crear el archivo: src/initialState.js
+
+46. Crear el componente: src/components/Products.jsx
+
+47. Crear el componente: src/components/Product.jsx
+
+48. Conectar flujo de aplicación con Link y agregar algunos iconos a los botones
+
+49. Agregar FontAwesome al index.html, traer el kit <script src="https://kit.fontawesome.com/10cab623a3.js" crossorigin="anonymous"></script>
+
+** Integración de React Hooks a nuestro Proyecto **
+
+50. Crear la carpeta: src/context
+
+51. Crear el archivo: src/context/AppContext.js
+
+52. Crear la carpeta: src/hooks
+
+53. Crear el archivo: src/hooks/useInitialState.js
+
+54. Conectar nuestros componentes al UseContext
+
+55. Integrar el hook de 3ros de react-router, userHistory en el componente Information
+
+** Configuración de pagosn con PayPal y Integración de Google Maps **
+
+56. Integrar pagos al proyecto con la API de PayPal (Crear la Key, ver archivo: ContectarAppConPayPal.txt)
+
+57. Instalar paypal: npm i react-paypal-button-v2
+
+58. Instaar dotenv-webpack, para no dejar tan expuestos datos: npm install --save-dev dotenv-webpack
+
+59. Crear el archivo: .ENV 
+
+60. Integrar mapa al proyecto con la API de Google (Obtener la Key, ver archivo: ConectarAppConGoogleMaps.txt)
+
+61. Instalar google maps: npm install @react-google-maps/api --save
+    Alternativa de google: npm install react react-dom leaflet 
+                           npm install react-leaflet
+
+62. Crear el componente: src/components/Map.jsx
+
+63. Activar la API Geocoding API en la consola o Google Maps Platform.
+
+64. Crear el custo hook: src/hooks/useGoogleAddress.js
+
+65. Instalar axios: npm install axios --save
+
+** Estrategias de Deployment Profesional **
+
+** Optimización de aplicaciones web con React **
+
+** Bonus: trabaja con Strapi CMS para crear tu propia API **
