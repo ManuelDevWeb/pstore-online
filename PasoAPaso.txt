@@ -195,4 +195,24 @@ forma no enviar un bug o inconsistencias al repositorio del proyecto)
 
 80. Empezar a agregar elementos en nuestros componentes y containers con el fin de mejorar SEO
 
+81. Desplegar cambios a github.
+
+82. Analizar performance de nuestra aplicación con Lighthouse: Inspeccionar nuestra página en google, ir a Lighthouse
+    y generar reporte. 
+
+** Convierte tu aplicación de React en PWA (Progressive Web Application)
+
+83. Crear el archivo: public/service-worker.js
+
+84. Crear el archivo: public/manifest.json
+
+85. Instalar un plugin para webpack que nos ayudará a copiar los archivos de la carpeta /public a la carpeta de 
+    nuestro proyecto compilado: npm install copy-webpack-plugin --save-dev
+
+86. Una vez instalado, es necesario agregar la configuración necesaria en el archivo wepack.config.js
+
+87. Agregar service worker a index.html
+
+88. Ejecutar: npm run build y luego npm run start
+
 ** Bonus: trabaja con Strapi CMS para crear tu propia API **

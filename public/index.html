@@ -6,12 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="manifest" href="./manifest.json">
     <script src="https://kit.fontawesome.com/10cab623a3.js" crossorigin="anonymous"></script>
     <title>Store Online</title>
 </head>
 
 <body>
     <div id="app"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                }).catch(function(err) {
+                    console.log(err)
+                });
+            });
+        } else {
+            console.log('service worker is not supported');
+        }
+    </script>
 </body>
 
 </html>

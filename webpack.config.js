@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const DotEnv = require('dotenv-webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 
 // Configuración de los elementos de webpack
 module.exports = {
@@ -70,6 +71,14 @@ module.exports = {
         }),
         // Plugin dotenv
         new DotEnv(),
+        // Plugin Copy
+        new CopyPlugin({
+            patterns: [
+                { from: 'public/manifest.json', to: '' },
+                { from: 'public/service-worker.js', to: '' },
+                { from: 'public/icon.png', to: 'assets' },
+            ],
+        }),
     ],
     // Configuración de devServer, para crear un servidor de trabajo local
     devServer: {
