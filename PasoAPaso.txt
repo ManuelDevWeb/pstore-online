@@ -164,10 +164,35 @@ forma no enviar un bug o inconsistencias al repositorio del proyecto)
     - Crear el secret FIREBASE_TOKEN con el valor obtenido (Archivo ContectarAppConFirebase.txt)
     - Crear el secret CLIENT_ID_APP con el valor del .ENV 
     - Crear el secret KEY_GOOGLE_MAPS con el valor del .ENV
-                          
 
+71. Enviar cambios a github
 
+72. Ir al repo de git en la página, luego a actions para ver que si este el desencadenamiento del action y funcione bien.
+
+73. Si todo sale correcto ir a firebase/hosting y podemos ver que tenemos el proyecto en producción: https://pstore-online-7fffe.web.app/
+
+74. Comprar un dominio es Namecheap (Pago) o Cloudfare (Free)
+
+75. - Ingresar a cloudfare
+    - Agregar el dominio creado
+    - Copiar los 2 dns que nos dan y llevarlos a la configuración del NamesServer del proveedor de dominio.
+    - Darle a Check nameservers en clodfare
+    - Activar la opción de HTTPS
+    - Auto Minify: JavaScript, CSS, HTML
+    
+76. Ir a Firebase para conectar con el dominio:
+    - Añadir dominio personalizado: Agregar dominio comprado (cmvl.ml)
+    - Copiar registro TXT y llevarlo a DNSmanagement/Add register/ TXT, Name: @, Content: Registro que copiamos
+    - Copiar la ip que me da firebase y llevarlo a DNSmanagement/Add register/ A, Name: @, IpV4: Ip que copiamos    
+
+77. Ir a Cloudfire y en el apartado de ssl/tls cambiar de flexible a full
+
+78. Finalmente ir a firebase y abrir el nuevo dominio !! Qué Felicidad !!
 
 ** Optimización de aplicaciones web con React **
+
+79. Instalar react-helmet: npm install react-helmet --save
+
+80. Empezar a agregar elementos en nuestros componentes y containers con el fin de mejorar SEO
 
 ** Bonus: trabaja con Strapi CMS para crear tu propia API **

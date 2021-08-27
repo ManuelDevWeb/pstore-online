@@ -21,3 +21,5 @@
 -> Sobreescribir index: No
 
 -> Enviar cambios al repositorio de github
+
+-> Obtener el firebaseLogin: firebase login:ci (Cambiar de consola -> cmd) 
